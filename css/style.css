@@ -11,7 +11,7 @@ body {
 .text {
   position: absolute;
   font-family: cursive;
-  color: rgba(241, 241, 241, 0.821);
+  color: rgba(241, 241, 241, 0.82);
   font-size: 80px;
   opacity: 0.68;
   top: 40%;
@@ -19,6 +19,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: -1;
 }
+
 .rings {
   position: relative;
   width: 400px;
@@ -32,7 +33,6 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  aspect-ratio: 1/1;
   border-width: 2px;
   border-style: solid;
   border-radius: 50%;
@@ -102,9 +102,11 @@ body {
     transform: perspective(200px) translatez(0);
     filter: opacity(0);
   }
+
   60% {
     filter: opacity(100%);
   }
+
   100% {
     transform: perspective(200px) translatez(200px);
   }
@@ -123,7 +125,11 @@ body {
   85% {
     transform: translate3d(-60%, 25%, 0);
   }
-  100% {
+  0% {
     transform: translate3d(0, 0, 0);
   }
+}
+
+.ring {
+  aspect-ratio: 1/1;
 }
