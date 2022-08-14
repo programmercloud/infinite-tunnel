@@ -8,6 +8,17 @@ body {
   display: flex;
 }
 
+.text {
+  position: absolute;
+  font-family: cursive;
+  color: rgba(241, 241, 241, 0.821);
+  font-size: 80px;
+  opacity: 0.68;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 .rings {
   position: relative;
   width: 400px;
